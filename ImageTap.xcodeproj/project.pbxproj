@@ -1,0 +1,443 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EE2BC7081AED8B44004D77A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2BC7071AED8B44004D77A7 /* AppDelegate.swift */; };
+		EE2BC70B1AED8B44004D77A7 /* ImageTap.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EE2BC7091AED8B44004D77A7 /* ImageTap.xcdatamodeld */; };
+		EE2BC70D1AED8B44004D77A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2BC70C1AED8B44004D77A7 /* ViewController.swift */; };
+		EE2BC7101AED8B44004D77A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE2BC70E1AED8B44004D77A7 /* Main.storyboard */; };
+		EE2BC7121AED8B44004D77A7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE2BC7111AED8B44004D77A7 /* Images.xcassets */; };
+		EE2BC7151AED8B44004D77A7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE2BC7131AED8B44004D77A7 /* LaunchScreen.xib */; };
+		EE2BC7211AED8B44004D77A7 /* ImageTapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2BC7201AED8B44004D77A7 /* ImageTapTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EE2BC71B1AED8B44004D77A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE2BC6FA1AED8B43004D77A7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE2BC7011AED8B44004D77A7;
+			remoteInfo = ImageTap;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EE2BC7021AED8B44004D77A7 /* ImageTap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageTap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE2BC7061AED8B44004D77A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE2BC7071AED8B44004D77A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EE2BC70A1AED8B44004D77A7 /* ImageTap.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ImageTap.xcdatamodel; sourceTree = "<group>"; };
+		EE2BC70C1AED8B44004D77A7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EE2BC70F1AED8B44004D77A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EE2BC7111AED8B44004D77A7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EE2BC7141AED8B44004D77A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		EE2BC71A1AED8B44004D77A7 /* ImageTapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageTapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE2BC71F1AED8B44004D77A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE2BC7201AED8B44004D77A7 /* ImageTapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTapTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EE2BC6FF1AED8B44004D77A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE2BC7171AED8B44004D77A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EE2BC6F91AED8B43004D77A7 = {
+			isa = PBXGroup;
+			children = (
+				EE2BC7041AED8B44004D77A7 /* ImageTap */,
+				EE2BC71D1AED8B44004D77A7 /* ImageTapTests */,
+				EE2BC7031AED8B44004D77A7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EE2BC7031AED8B44004D77A7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EE2BC7021AED8B44004D77A7 /* ImageTap.app */,
+				EE2BC71A1AED8B44004D77A7 /* ImageTapTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EE2BC7041AED8B44004D77A7 /* ImageTap */ = {
+			isa = PBXGroup;
+			children = (
+				EE2BC7071AED8B44004D77A7 /* AppDelegate.swift */,
+				EE2BC70C1AED8B44004D77A7 /* ViewController.swift */,
+				EE2BC70E1AED8B44004D77A7 /* Main.storyboard */,
+				EE2BC7111AED8B44004D77A7 /* Images.xcassets */,
+				EE2BC7131AED8B44004D77A7 /* LaunchScreen.xib */,
+				EE2BC7091AED8B44004D77A7 /* ImageTap.xcdatamodeld */,
+				EE2BC7051AED8B44004D77A7 /* Supporting Files */,
+			);
+			path = ImageTap;
+			sourceTree = "<group>";
+		};
+		EE2BC7051AED8B44004D77A7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EE2BC7061AED8B44004D77A7 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EE2BC71D1AED8B44004D77A7 /* ImageTapTests */ = {
+			isa = PBXGroup;
+			children = (
+				EE2BC7201AED8B44004D77A7 /* ImageTapTests.swift */,
+				EE2BC71E1AED8B44004D77A7 /* Supporting Files */,
+			);
+			path = ImageTapTests;
+			sourceTree = "<group>";
+		};
+		EE2BC71E1AED8B44004D77A7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EE2BC71F1AED8B44004D77A7 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EE2BC7011AED8B44004D77A7 /* ImageTap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE2BC7241AED8B44004D77A7 /* Build configuration list for PBXNativeTarget "ImageTap" */;
+			buildPhases = (
+				EE2BC6FE1AED8B44004D77A7 /* Sources */,
+				EE2BC6FF1AED8B44004D77A7 /* Frameworks */,
+				EE2BC7001AED8B44004D77A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ImageTap;
+			productName = ImageTap;
+			productReference = EE2BC7021AED8B44004D77A7 /* ImageTap.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EE2BC7191AED8B44004D77A7 /* ImageTapTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE2BC7271AED8B44004D77A7 /* Build configuration list for PBXNativeTarget "ImageTapTests" */;
+			buildPhases = (
+				EE2BC7161AED8B44004D77A7 /* Sources */,
+				EE2BC7171AED8B44004D77A7 /* Frameworks */,
+				EE2BC7181AED8B44004D77A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE2BC71C1AED8B44004D77A7 /* PBXTargetDependency */,
+			);
+			name = ImageTapTests;
+			productName = ImageTapTests;
+			productReference = EE2BC71A1AED8B44004D77A7 /* ImageTapTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EE2BC6FA1AED8B43004D77A7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Jay Zheng";
+				TargetAttributes = {
+					EE2BC7011AED8B44004D77A7 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					EE2BC7191AED8B44004D77A7 = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = EE2BC7011AED8B44004D77A7;
+					};
+				};
+			};
+			buildConfigurationList = EE2BC6FD1AED8B43004D77A7 /* Build configuration list for PBXProject "ImageTap" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EE2BC6F91AED8B43004D77A7;
+			productRefGroup = EE2BC7031AED8B44004D77A7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EE2BC7011AED8B44004D77A7 /* ImageTap */,
+				EE2BC7191AED8B44004D77A7 /* ImageTapTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EE2BC7001AED8B44004D77A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE2BC7101AED8B44004D77A7 /* Main.storyboard in Resources */,
+				EE2BC7151AED8B44004D77A7 /* LaunchScreen.xib in Resources */,
+				EE2BC7121AED8B44004D77A7 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE2BC7181AED8B44004D77A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EE2BC6FE1AED8B44004D77A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE2BC70D1AED8B44004D77A7 /* ViewController.swift in Sources */,
+				EE2BC7081AED8B44004D77A7 /* AppDelegate.swift in Sources */,
+				EE2BC70B1AED8B44004D77A7 /* ImageTap.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE2BC7161AED8B44004D77A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE2BC7211AED8B44004D77A7 /* ImageTapTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EE2BC71C1AED8B44004D77A7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EE2BC7011AED8B44004D77A7 /* ImageTap */;
+			targetProxy = EE2BC71B1AED8B44004D77A7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EE2BC70E1AED8B44004D77A7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE2BC70F1AED8B44004D77A7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EE2BC7131AED8B44004D77A7 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE2BC7141AED8B44004D77A7 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EE2BC7221AED8B44004D77A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EE2BC7231AED8B44004D77A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EE2BC7251AED8B44004D77A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ImageTap/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EE2BC7261AED8B44004D77A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ImageTap/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EE2BC7281AED8B44004D77A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ImageTapTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ImageTap.app/ImageTap";
+			};
+			name = Debug;
+		};
+		EE2BC7291AED8B44004D77A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ImageTapTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ImageTap.app/ImageTap";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EE2BC6FD1AED8B43004D77A7 /* Build configuration list for PBXProject "ImageTap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE2BC7221AED8B44004D77A7 /* Debug */,
+				EE2BC7231AED8B44004D77A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE2BC7241AED8B44004D77A7 /* Build configuration list for PBXNativeTarget "ImageTap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE2BC7251AED8B44004D77A7 /* Debug */,
+				EE2BC7261AED8B44004D77A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EE2BC7271AED8B44004D77A7 /* Build configuration list for PBXNativeTarget "ImageTapTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE2BC7281AED8B44004D77A7 /* Debug */,
+				EE2BC7291AED8B44004D77A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EE2BC7091AED8B44004D77A7 /* ImageTap.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EE2BC70A1AED8B44004D77A7 /* ImageTap.xcdatamodel */,
+			);
+			currentVersion = EE2BC70A1AED8B44004D77A7 /* ImageTap.xcdatamodel */;
+			path = ImageTap.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EE2BC6FA1AED8B43004D77A7 /* Project object */;
+}
