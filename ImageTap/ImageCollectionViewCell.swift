@@ -12,4 +12,13 @@ class ImageCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var textLabel: UILabel!
     
+    override func awakeFromNib() {
+        var bgView = UIView(frame: self.bounds)
+        self.backgroundView = bgView
+        self.backgroundView?.backgroundColor = UIColor.blueColor()
+        
+        var selectedView = UIView(frame: self.bounds)
+        self.selectedBackgroundView = selectedView
+        self.selectedBackgroundView.backgroundColor = UIColor.purpleColor()
+    }
 }

@@ -61,8 +61,24 @@ class ImageCollectionViewController: UICollectionViewController {
         
         return cell
     }
-
+    
     // MARK: UICollectionViewDelegate
+    
+    override func collectionView(collectionView: UICollectionView, didHighlightItemAtIndexPath indexPath: NSIndexPath) {
+//    <#code#>
+    }
+    
+    override func collectionView(collectionView: UICollectionView, didUnhighlightItemAtIndexPath indexPath: NSIndexPath) {
+//    <#code#>
+    }
+    
+    override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+//    <#code#>
+    }
+    
+    override func collectionView(collectionView: UICollectionView, didDeselectItemAtIndexPath indexPath: NSIndexPath) {
+//    <#code#>
+    }
 
     /*
     // Uncomment this method to specify if the specified item should be highlighted during tracking
