@@ -15,6 +15,7 @@
 		EE2BC7211AED8B44004D77A7 /* ImageTapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2BC7201AED8B44004D77A7 /* ImageTapTests.swift */; };
 		EE2BC72F1AED8FA6004D77A7 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2BC72E1AED8FA6004D77A7 /* ImageCollectionViewCell.swift */; };
 		EE2BC7311AED8FC3004D77A7 /* ImageCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2BC7301AED8FC3004D77A7 /* ImageCollectionViewController.swift */; };
+		EE82391A1AF5F01D00EAB820 /* SingleImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8239191AF5F01D00EAB820 /* SingleImageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		EE2BC7201AED8B44004D77A7 /* ImageTapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTapTests.swift; sourceTree = "<group>"; };
 		EE2BC72E1AED8FA6004D77A7 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		EE2BC7301AED8FC3004D77A7 /* ImageCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewController.swift; sourceTree = "<group>"; };
+		EE8239191AF5F01D00EAB820 /* SingleImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleImageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,9 +86,10 @@
 				EE2BC70E1AED8B44004D77A7 /* Main.storyboard */,
 				EE2BC7111AED8B44004D77A7 /* Images.xcassets */,
 				EE2BC7091AED8B44004D77A7 /* ImageTap.xcdatamodeld */,
-				EE2BC7051AED8B44004D77A7 /* Supporting Files */,
-				EE2BC72E1AED8FA6004D77A7 /* ImageCollectionViewCell.swift */,
+				EE8239191AF5F01D00EAB820 /* SingleImageViewController.swift */,
 				EE2BC7301AED8FC3004D77A7 /* ImageCollectionViewController.swift */,
+				EE2BC72E1AED8FA6004D77A7 /* ImageCollectionViewCell.swift */,
+				EE2BC7051AED8B44004D77A7 /* Supporting Files */,
 			);
 			path = ImageTap;
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE2BC7311AED8FC3004D77A7 /* ImageCollectionViewController.swift in Sources */,
+				EE82391A1AF5F01D00EAB820 /* SingleImageViewController.swift in Sources */,
 				EE2BC72F1AED8FA6004D77A7 /* ImageCollectionViewCell.swift in Sources */,
 				EE2BC7081AED8B44004D77A7 /* AppDelegate.swift in Sources */,
 				EE2BC70B1AED8B44004D77A7 /* ImageTap.xcdatamodeld in Sources */,
@@ -421,6 +425,7 @@
 				EE2BC7261AED8B44004D77A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EE2BC7271AED8B44004D77A7 /* Build configuration list for PBXNativeTarget "ImageTapTests" */ = {
 			isa = XCConfigurationList;
@@ -429,6 +434,7 @@
 				EE2BC7291AED8B44004D77A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

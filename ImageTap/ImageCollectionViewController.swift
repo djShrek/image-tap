@@ -11,6 +11,7 @@ import UIKit
 let reuseIdentifier = "Image Cell"
 
 class ImageCollectionViewController: UICollectionViewController {
+    let imageNames = ["apple.jpg", "orange.jpg", "cat.jpg", "dog.jpg"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,35 +50,37 @@ class ImageCollectionViewController: UICollectionViewController {
 
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         //#warning Incomplete method implementation -- Return the number of items in the section
-        return 24
+        return 4
     }
 
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as! ImageCollectionViewCell
-    
-        // Configure the cell
-        
-        cell.textLabel.text = "\(indexPath.row + 1)"
-        
+        if let myImage = UIImage(named: imageNames[indexPath.row]) {
+            cell.imageView.image = myImage
+        }
         return cell
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "showSingleImage" {
+            let indexPath = collectionView?.indexPathsForSelectedItems().first as! NSIndexPath
+            let destVC = segue.destinationViewController as! SingleImageViewController
+            destVC.imageName = imageNames[indexPath.row]
+        }
     }
     
     // MARK: UICollectionViewDelegate
     
     override func collectionView(collectionView: UICollectionView, didHighlightItemAtIndexPath indexPath: NSIndexPath) {
-//    <#code#>
     }
     
     override func collectionView(collectionView: UICollectionView, didUnhighlightItemAtIndexPath indexPath: NSIndexPath) {
-//    <#code#>
     }
     
     override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-//    <#code#>
     }
     
     override func collectionView(collectionView: UICollectionView, didDeselectItemAtIndexPath indexPath: NSIndexPath) {
-//    <#code#>
     }
 
     /*
