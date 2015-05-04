@@ -36,7 +36,7 @@
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <outlet property="imageView" destination="Wnp-82-6Fc" id="xtj-75-bsh"/>
-                                    <segue destination="Fgg-S1-ajb" kind="show" id="cew-Uh-CqD"/>
+                                    <segue destination="Fgg-S1-ajb" kind="show" identifier="showSingleImage" id="cew-Uh-CqD"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
