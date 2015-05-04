@@ -17,8 +17,4 @@ class SingleImageViewController: UIViewController {
         super.viewDidLoad()
         imageView.image = UIImage(named: imageName!)
     }
-
-    @IBAction func close(sender: UIButton) {
-        dismissViewControllerAnimated(true, completion: nil)
-    }
 }

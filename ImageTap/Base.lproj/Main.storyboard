@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
     </dependencies>
     <scenes>
-        <!--Image Collection View Controller-->
+        <!--Image Tap-->
         <scene sceneID="T6z-lT-RKA">
             <objects>
                 <collectionViewController id="nJo-x3-5Lv" customClass="ImageCollectionViewController" customModule="ImageTap" customModuleProvider="target" sceneMemberID="viewController">
@@ -45,7 +45,9 @@
                             <outlet property="delegate" destination="nJo-x3-5Lv" id="3Qk-YZ-3wP"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" id="W5m-iU-5RL"/>
+                    <navigationItem key="navigationItem" title="Image Tap" id="W5m-iU-5RL">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="fDr-Bz-sU0"/>
+                    </navigationItem>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CqQ-pJ-8Xo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -60,7 +62,7 @@
                         <viewControllerLayoutGuide type="bottom" id="LbS-1A-XeM"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Fon-Wl-CQi">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vaj-Y5-Iac">
