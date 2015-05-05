@@ -15,7 +15,6 @@ class SingleImageViewController: UIViewController, AVAudioPlayerDelegate, AVAudi
     
     @IBOutlet weak var recordButton: UIButton!
     @IBOutlet weak var stopButton: UIButton!
-    @IBOutlet weak var playButton: UIButton!
     
     var imageName: String? = ""
     
@@ -28,12 +27,14 @@ class SingleImageViewController: UIViewController, AVAudioPlayerDelegate, AVAudi
         
         setupRecorder()
         stopButton.enabled = false
-        playButton.enabled = false
+    }
+    
+    @IBAction func imageViewTap(gesture: UITapGestureRecognizer) {
+        playRecording()
     }
     
     @IBAction func startRecording(sender: UIButton) {
         if audioRecorder?.recording == false {
-            playButton.enabled = false
             stopButton.enabled = true
             
             audioRecorder?.record()
@@ -42,33 +43,12 @@ class SingleImageViewController: UIViewController, AVAudioPlayerDelegate, AVAudi
     
     @IBAction func stopRecording(sender: UIButton) {
         stopButton.enabled = false
-        playButton.enabled = true
         recordButton.enabled = true
         
         if audioRecorder?.recording == true {
             audioRecorder?.stop()
         } else {
             audioPlayer?.stop()
-        }
-    }
-    
-    @IBAction func playRecording(sender: UIButton) {
-        if audioRecorder?.recording == false {
-            stopButton.enabled = true
-            recordButton.enabled = false
-            
-            var error: NSError?
-            
-            audioPlayer = AVAudioPlayer(contentsOfURL: audioRecorder?.url,
-                error: &error)
-            
-            audioPlayer?.delegate = self
-            
-            if let err = error {
-                println("audioPlayer error: \(err.localizedDescription)")
-            } else {
-                audioPlayer?.play()
-            }
         }
     }
     
@@ -97,6 +77,25 @@ class SingleImageViewController: UIViewController, AVAudioPlayerDelegate, AVAudi
             println("audioSession error: \(err.localizedDescription)")
         } else {
             audioRecorder?.prepareToRecord()
+        }
+    }
+    
+    private func playRecording() {
+        if audioRecorder?.recording == false {
+            stopButton.enabled = true
+            recordButton.enabled = false
+            
+            var error: NSError?
+            
+            audioPlayer = AVAudioPlayer(contentsOfURL: audioRecorder?.url, error: &error)
+            
+            audioPlayer?.delegate = self
+            
+            if let err = error {
+                println("audioPlayer error: \(err.localizedDescription)")
+            } else {
+                audioPlayer?.play()
+            }
         }
     }
     

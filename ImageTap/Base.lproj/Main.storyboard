@@ -66,11 +66,15 @@
                         <rect key="frame" x="0.0" y="64" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vaj-Y5-Iac">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vaj-Y5-Iac">
                                 <rect key="frame" x="60" y="120" width="480" height="360"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="5ZG-d0-lD3" appends="YES" id="MaB-Ac-6FR"/>
+                                </connections>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YrI-uh-SdS">
-                                <rect key="frame" x="507" y="488" width="33" height="30"/>
+                                <rect key="frame" x="118" y="488" width="33" height="30"/>
                                 <state key="normal" title="Stop">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -78,17 +82,8 @@
                                     <action selector="stopRecording:" destination="Fgg-S1-ajb" eventType="touchUpInside" id="ceY-Z7-YLn"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zJ5-5Q-vC1">
-                                <rect key="frame" x="60" y="488" width="30" height="30"/>
-                                <state key="normal" title="Play">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="playRecording:" destination="Fgg-S1-ajb" eventType="touchUpInside" id="BCE-Yk-Ymt"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vzm-hG-7f6">
-                                <rect key="frame" x="449" y="488" width="50" height="30"/>
+                                <rect key="frame" x="60" y="488" width="50" height="30"/>
                                 <state key="normal" title="Record">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -112,12 +107,16 @@
                     <navigationItem key="navigationItem" id="AAX-hP-3oz"/>
                     <connections>
                         <outlet property="imageView" destination="Vaj-Y5-Iac" id="8Lg-zO-xR5"/>
-                        <outlet property="playButton" destination="zJ5-5Q-vC1" id="blV-bL-TY6"/>
                         <outlet property="recordButton" destination="vzm-hG-7f6" id="SJ9-LR-2j3"/>
                         <outlet property="stopButton" destination="YrI-uh-SdS" id="tAB-sn-zio"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iWr-BI-VuC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="5ZG-d0-lD3">
+                    <connections>
+                        <action selector="imageViewTap:" destination="Fgg-S1-ajb" id="XJw-mI-shB"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-377" y="373"/>
         </scene>
