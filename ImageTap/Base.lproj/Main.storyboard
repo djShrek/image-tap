@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Image Tap-->
@@ -65,15 +66,55 @@
                         <rect key="frame" x="0.0" y="64" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vaj-Y5-Iac">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vaj-Y5-Iac">
                                 <rect key="frame" x="60" y="120" width="480" height="360"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YrI-uh-SdS">
+                                <rect key="frame" x="507" y="488" width="33" height="30"/>
+                                <state key="normal" title="Stop">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="stopRecording:" destination="Fgg-S1-ajb" eventType="touchUpInside" id="ceY-Z7-YLn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zJ5-5Q-vC1">
+                                <rect key="frame" x="60" y="488" width="30" height="30"/>
+                                <state key="normal" title="Play">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playRecording:" destination="Fgg-S1-ajb" eventType="touchUpInside" id="BCE-Yk-Ymt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vzm-hG-7f6">
+                                <rect key="frame" x="449" y="488" width="50" height="30"/>
+                                <state key="normal" title="Record">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startRecording:" destination="Fgg-S1-ajb" eventType="touchUpInside" id="WNz-ym-AtE"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Vaj-Y5-Iac" firstAttribute="leading" secondItem="Fon-Wl-CQi" secondAttribute="leadingMargin" constant="44" id="Jne-Hf-kC9"/>
+                            <constraint firstItem="Vaj-Y5-Iac" firstAttribute="top" secondItem="T1d-kW-s1x" secondAttribute="bottom" constant="56" id="PsI-EF-jZi"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Jne-Hf-kC9"/>
+                                <exclude reference="PsI-EF-jZi"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="AAX-hP-3oz"/>
                     <connections>
                         <outlet property="imageView" destination="Vaj-Y5-Iac" id="8Lg-zO-xR5"/>
+                        <outlet property="playButton" destination="zJ5-5Q-vC1" id="blV-bL-TY6"/>
+                        <outlet property="recordButton" destination="vzm-hG-7f6" id="SJ9-LR-2j3"/>
+                        <outlet property="stopButton" destination="YrI-uh-SdS" id="tAB-sn-zio"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iWr-BI-VuC" userLabel="First Responder" sceneMemberID="firstResponder"/>
